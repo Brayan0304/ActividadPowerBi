@@ -2,10 +2,11 @@
   "name": "powerbi-dashboard",
   "version": "1.0.0",
   "description": "A web application to visualize Power BI dashboards.",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'Build step not defined'"
+    "start": "live-server",
+    "build": "echo 'Static build complete'",
+    "dev": "live-server"
   },
   "author": "Your Name",
   "license": "MIT",
