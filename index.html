@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power BI Dashboard</title>
+    <title>Power BI Dashboard - Análisis de Datos</title>
     <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 <body>
-    <h1>Visualización del Dashboard de Power BI</h1>
-    <iframe title="tallerpowerbi" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDA2ZDc0NzMtYzlmYS00ZjIxLTgzMTEtYjZiZTZkNWIxYzkwIiwidCI6IjRiZjM4ZWEyLTgzMmQtNDU1Mi1iNTA4LTQyMTU3MGRhNDNmZiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    <div class="container">
+        <header>
+            <h1>📊 Dashboard de Power BI</h1>
+            <p class="subtitle">Análisis de Productos por Proveedor</p>
+            <div class="info-badge">Visualización Interactiva</div>
+        </header>
+
+        <div class="dashboard-wrapper">
+            <div class="iframe-container">
+                <div class="loading" id="loading">Cargando dashboard...</div>
+                <iframe 
+                    title="tallerpowerbi" 
+                    width="1024" 
+                    height="1060" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiZDA2ZDc0NzMtYzlmYS00ZjIxLTgzMTEtYjZiZTZkNWIxYzkwIiwidCI6IjRiZjM4ZWEyLTgzMmQtNDU1Mi1iNTA4LTQyMTU3MGRhNDNmZiIsImMiOjR9" 
+                    frameborder="0" 
+                    allowFullScreen="true"
+                    onload="hideLoading()">
+                </iframe>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Dashboard Power BI | Análisis de Datos Empresariales</p>
+        </footer>
+    </div>
+
     <script src="src/scripts/main.js"></script>
 </body>
 </html>
